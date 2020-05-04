@@ -3,9 +3,10 @@ import './App.css';
 
 function App() {
   return (
-    <div>
-        Allahuabha!
-    </div>
+    <h1>
+      Allahuabha +
+    </h1>
+    <
   );
 }
 

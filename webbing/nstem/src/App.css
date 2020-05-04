@@ -1,38 +1,29 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-color: rgba(239, 234, 219);
+  font-family: "Montez", courier-new, sans-serif;
   color: white;
-}
+  padding: 40px;
+  font-family: Arial;
+  text-align: center;
+  background: -webkit-linear-gradient( rgba(239, 234, 219), 0.60), rgba(255, 69, 1, 0.61));
 
-.App-link {
-  color: #61dafb;
 }
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool */
+h1 {
+    font-size: 2em;
+    font-family: "Press Start 2P", courier-new, sans-serif;
+    position: absolute;
+    opacity:90%;
+    background-color: rgb(224, 219, 239);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+        transform: translateY(-60px)
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.env{
+  position:relative;
+  margin: 50px auto;
+  width: 18px;
+  height: 180px;
+  border:45px;
 }
