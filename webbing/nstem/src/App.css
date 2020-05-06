@@ -305,7 +305,7 @@ p {
 
 .flower5{
   animation-name: flower5;
-  animation-duration: 0.3s;
+  animation-duration: 4s;
   animation-iteration-count:infinite;
   width: 90px; /* width of container */
   height: 90px; /* height of container */
@@ -324,12 +324,12 @@ p {
 }
 .metabox{
   animation: metabox;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
 
 }
 @keyframes metabox {
-  50%{transform:translateX(90px);}
+  /* 50%{transform:translateX(90px);} */
 }
 .box{
   animation-name: box;

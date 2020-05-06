@@ -15,7 +15,7 @@ function DataStructures() {
 
   return (
     <div>
-    <section>allahuabha</section>
+    <section>Allah'u'abha</section>
       <div>
 
         <div >
