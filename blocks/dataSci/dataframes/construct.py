@@ -6,7 +6,7 @@ import pandas as pd
 #####################
 
 # Build a DataFrame
-quanta = pd.read_csv('~/data/particles.csv')
+quanta = pd.read_csv('~/nstemData/particles.csv')
 print(quanta.info())
 
 # Load Data into a DataFrame
