@@ -38,6 +38,7 @@ p {
   position: absolute;
   opacity:90%;
   background-color: rgb(99, 77, 172);
+  :active {color: blue};
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     transform: translateY(-9px)
@@ -311,7 +312,7 @@ p {
   height: 90px; /* height of container */
   object-fit: cover;
   border-radius: 50%;
-  opacity:60%;
+  opacity:45%;
   position: absolute;
   left:310px;
   top:310px;
@@ -351,4 +352,17 @@ p {
 
 }
 
+
+.map1{
+  top: 90px;
+  width: 450px; /* width of container */
+  height: 300px; /* height of container */
+  border-radius: 19px;
+  opacity:90%;
+  position: absolute;
+  left:310px;
+
+
+  transform: scale(1.2,1.2)
+  }
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool */

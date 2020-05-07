@@ -7,7 +7,8 @@ import v2 from './vectors/v2.svg';
 import flower4 from './vectors/flower4.svg';
 import unity from './vectors/unity.svg';
 import box from './vectors/box.svg';
-
+import map1 from './vectors/map1.svg';
+// <img class="map1" src={map1}/>
 
 function DataStructures() {
 
@@ -15,11 +16,10 @@ function DataStructures() {
 
   return (
     <div>
-    <section>Allah'u'abha</section>
+    <section class = "section">Allah'u'abha</section>
       <div>
-
         <div >
-        <div class = "title"></div>
+        <div></div>
           <div class = "listBox1"></div>
           <div class = "indexBox1"></div>
           <div class = "boxIndex1"></div>

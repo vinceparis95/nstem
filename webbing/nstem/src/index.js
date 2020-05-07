@@ -5,6 +5,6 @@ import DataStructures from './App';
 
 ReactDOM.render(
   <DataStructures />,
-  
+
   document.getElementById('root')
 );

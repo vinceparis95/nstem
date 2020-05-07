@@ -1,34 +1,49 @@
 import pandas as pd;
 import matplotlib.pyplot as plt
 
+devoq3_19 = pd.read_excel("~/nstemData/devoq3_19.xlsx", index_col=False)
+devoq1_20 = pd.read_excel("~/nstemData/devoq1_20.xlsx", index_col=False)
 
+################################################################
+# clean up quarterly DataFrames
 
-devotions = pd.read_excel("~/nstemData/devoQ1.xlsx")
-
-devotions = devotions.loc[1:64,'Host':'4/26 F']
-devotions = devotions.rename(columns={'Host':'day'})
-devotions = devotions.drop(['Sub-cluster',
+#Q3/19 DataFrame (51 rows)
+devoq3_19 = devoq3_19.loc[1:51,'Host':]
+devoq3_19 = devoq3_19.rename(columns={'Host':'day'})
+devoq3_19 = devoq3_19.drop(['Sub-cluster',
                             'Sector/Locality', 'Frequency',
                             'Count'], axis=1)
-devotions = devotions.fillna(0)
-devotions = devotions.set_index('day').T
+devoq3_19 = devoq3_19.fillna(0)
+devoq3_19 = devoq3_19.set_index('day').T
+devoq3_19 = devoq3_19.iloc[1:42]
+devoq3_19 = devoq3_19.loc[:, ~devoq3_19.columns.duplicated()]
+print(devoq3_19)
 
+# Q1/20 DataFrame (64 rows)
+devoq1_20 = devoq1_20.loc[1:64,'Host':]
+devoq1_20 = devoq1_20.rename(columns={'Host':'day'})
+devoq1_20 = devoq1_20.drop(['Sub-cluster',
+                            'Sector/Locality', 'Frequency',
+                            'Count'], axis=1)
+devoq1_20 = devoq1_20.fillna(0)
+devoq1_20 = devoq1_20.set_index('day').T
+devoq1_20 = devoq1_20.iloc[1:34]
+devoq1_20 = devoq1_20.loc[:, ~devoq1_20.columns.duplicated()]
+# print(devoq1_20)
 
-print(devotions)
-print(list(devotions.columns))
+#########################################################
+# Build master df and plot resulting DataFrame
 
-mohadjeri = devotions['Mohadjeri family']
+# build master from quarterlies
+df=pd.concat((devoq3_19,devoq1_20)).fillna(0)
+df = df.drop(['MVCI Group'], axis=1)
+df.to_csv('~/Desktop/df3.csv')
+print(df.columns)
 
-plot = devotions.plot(legend=None,linewidth=7, alpha=0.14)
-plot.set_ylabel('number')
-plot.set_xlabel('days')
-plt.xticks(fontsize=9, rotation=45)
-plt.locator_params(axis='x',nbins=19)
-
-plt.show()
-
-# plot2 = devotions.plot(kind= "scatter", x='Host', y='sum',
-# legend=None,linewidth=7, alpha=0.14)
+# create plot from master
+# plot = df.plot(legend=None,linewidth=7, alpha=0.09)
+# plot.set_ylabel('number')
+# plot.set_xlabel('days')
+# plt.xticks(fontsize=9, rotation=45)
+# plt.locator_params(axis='x',nbins=19)
 # plt.show()
-
-# devotions[['Mohadjeri family','Anisa new Bk 1 w/Nagiarry']].plot()
