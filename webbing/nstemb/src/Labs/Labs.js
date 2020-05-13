@@ -6,8 +6,6 @@ import v1 from './vectors/v1.svg';
 import v2 from './vectors/v2.svg';
 
 
-
-
 class Labs extends Component {
     render() {
         return (

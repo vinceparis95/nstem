@@ -5,8 +5,8 @@ import Models from "./Models/Models";
 
 import Labs from "./Labs/Labs";
 import Labs2 from "./Labs/Labs2";
-import Labs3 from "./Labs/Labs3";
 import DS from "./Labs/DS/DS"
+import DataFrame from "./Labs/DS/DataFrame"
 import Python from "./Labs/DS/Python";
 
 import Services from "./Services/Services";
@@ -33,8 +33,8 @@ export default class Routes extends Component {
 
                     <Route path="/Labs" component={Labs} />
                     <Route path="/Labs2" component={Labs2} />
-                    <Route path="/Labs3" component={Labs3} />
                     <Route path="/DS" component={DS} />
+                    <Route path="/DataFrames" component={DataFrame} />
                     <Route path="/Python" component={Python} />
 
                     <Route path="/Services" component={Services} />
