@@ -1,0 +1,39 @@
+.unit{
+  animation: unit;
+  animation-duration: 2s;
+  animation-iteration-count:infinite ;
+  animation-fill-mode: forwards;
+  font-family: "Titillium Web";
+  margin-left: 19px;
+  color:rgba(143, 0, 145);
+  opacity:45%;
+}
+@keyframes unit {
+  50%{opacity: 36%  ;}
+  50{  background-color: rgba(145, 63, 0,0.72);
+}
+
+}
+
+.module{
+  animation: module;
+  animation-duration: 2s;
+  animation-iteration-count:infinite ;
+  animation-fill-mode: forwards;
+  background-color: rgba(145, 63, 0,0.72);
+  font-family: 'Titillium Web';
+  color: rgba(145, 255, 0,0.79);
+  border-radius: 14px;
+  opacity:60%;
+  width:130px;
+  height: 45px;
+  display: inline-block;
+  margin-left: 19px;
+  padding: 9px;
+  overflow:auto;
+  text-align: center;
+}
+
+@keyframes module {
+  50%{transform: scale(1.01,1.01);}
+}

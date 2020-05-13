@@ -1,0 +1,10 @@
+.thread{
+  background-color: rgba(145, 63, 0,0.72);
+  font-family: 'VT323';
+  color: rgba(145, 255, 0,0.79);
+  border-radius: 14px;
+  opacity:60%;
+  width:108px;
+  margin-left: 19px;
+
+}
