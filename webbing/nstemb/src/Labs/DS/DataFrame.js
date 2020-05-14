@@ -3,57 +3,75 @@ import React, { Component } from "react";
 import ReactDOM from 'react-dom'
 import history from '../../history';
 import "./DS.css";
-import df1 from '../vectors/df1.svg';
-import dfColumn from '../vectors/dfColumn.svg';
-import dfElement from '../vectors/dfElement.svg';
 
-var element = <img class="dfElement" src={dfElement} />
-var dims = 3*3
+var element = <li class="element"/>
+var col = 3
+var row =3
+
 var arr = []
-var a = [<img class="dfElement" src={dfElement} />]
 var i
-for (i = 0; i<dims; i++){
+for (i = 0; i<row; i++){
   arr.push(element)
 }
 
-function setDims(){
- dims=document.getElementById("dims").value
-}
-
 function DataFrame(){
+
+  var i
+  var n
+
   const [toggle, setToggle] = React.useState(false);
+  const Element = () => <li className="element" />;
+
   return (
+
     <div>
+      <div >
+        <div style={{fontFamily:'PressStart2P',opacity:'45%', width:'360px',
+        position:'absolute',left:'36px', top: '160px',color:'rgb(143, 0, 145)'}}>
+        </div>
+      <div >
 
-    <div >
-    <div style={{fontFamily:'PressStart2P',opacity:'45%', width:'360px',
-    position:'absolute',left:'36px', top: '160px',color:'rgb(143, 0, 145)'}}>
-{/*
-    dimensions
-    <input type="text" id="dims" style={{width:'60px', borderRadius:'9px',
-    border:'none', backgroundColor:'rgba(180, 180, 180,1)', opacity:'60%',
-    transform:'translateX(9px)'}} />
-    */}
-    </div>
+        <h1 class="dfHeader" style={{left:'30px'}}>
+        DataFrames :<br></br>
+        </h1>
 
-    <div >
-      <h1 class="dfHeader" style={{left:'30px'}}>DataFrames</h1>
-      <img class="dfAnimation1" style={{left:'500px'}} src={df1}></img>
-    </div>
-    <div class="dfButtonBorder"></div>
-    <button class="dfButton" onClick={()=>setToggle( (prev) => (!prev) )}>DF</button>
+        <h1  class='dfHeader2'style={{top:'150px',left:'30px'}}>
+        constructor</h1>
+        <div class="text box" style={{width:'180px'}}>
+        <p class="instructions">
+        to construct a DataFrame, say:<br/><br/>
+        df = pd.DataFrame(),<br/><br/>
+        and give a set of columns, like so:<br/><br/>
+        df['columns']=['col1', 'col2', 'col3'].
+        </p>
+        </div>
+        <div class="dfButtonBorder"></div>
+          <button class="dfButton" onClick={()=>setToggle( (prev) => (!prev) )}>
+          DF</button>
+        </div>
 
-    </div>
+        <div class="superScreen">
+          <div class="screenDiv" >
+            <div id="subScreen" class="subScreen">
 
+              {[...Array(col).keys()].map(ul => (
+                <ul key={ul}>
+                  {toggle &&
+                    [...Array(row).keys()].map(
+                      li => <Element key={li} />)}
+                </ul>
+              ))}
+
+            </div>
+          </div>
+        </div>
       <br/>
-      <div class="dfElementBoundary">
-      {
-        toggle &&  arr
-
-      }
-      </div>
     </div>
+  </div>
+
   )
 }
+
 export default DataFrame;
+
 ReactDOM.render(<DataFrame />, document.getElementById('root'));

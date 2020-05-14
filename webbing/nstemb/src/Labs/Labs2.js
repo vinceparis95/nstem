@@ -7,7 +7,6 @@ import v2 from './vectors/v2.svg';
 
 
 
-
 class Labs2 extends Component {
     render() {
         return (
@@ -82,7 +81,7 @@ class Labs2 extends Component {
           <div class="blocks2">
           <Nav.Link style={{color:'rgb(143, 0, 145)'}}href="/DataFrames">
           construction </Nav.Link>
-          <img class='v2' src={v2}/>
+          <div class='df'/>
           </div>
           </Carousel.Item>
           <Carousel.Item interval="10000">
@@ -115,32 +114,37 @@ class Labs2 extends Component {
           transform:'translate(-1082px,210px)',width:"340px", height:'90px%',padding:'27px',margin:'19px', borderRadius:'9px'}}>
           <Carousel.Item interval="10000">
           <div class="blocks2">
-          <Nav.Link style={{color:'rgb(143, 0, 145)'}}href="/QC"> quanta </Nav.Link>
+          <Nav.Link style={{color:'rgb(143, 0, 145)'}}href="/QC">
+          quanta </Nav.Link>
           <img class='v1' src={v1}/>
           </div>
           </Carousel.Item>
           <Carousel.Item interval="10000">
           <div class="blocks2">
-          <Nav.Link style={{color:'rgb(143, 0, 145)'}} href="/QC"> amplitudes </Nav.Link>
+          <Nav.Link style={{color:'rgb(143, 0, 145)'}} href="/QC">
+          amplitudes </Nav.Link>
           <img class='v1' src={v1}/>
           <img class='v1' src={v1}/>
           </div>
           </Carousel.Item>
           <Carousel.Item interval="10000">
           <div class="blocks2">
-          <Nav.Link style={{color:'rgb(143, 0, 145)'}} href="/QC"> superposition </Nav.Link>
+          <Nav.Link style={{color:'rgb(143, 0, 145)'}} href="/QC">
+          superposition </Nav.Link>
           <img class='v2b' src={v2}/>
           </div>
           </Carousel.Item>
           <Carousel.Item interval="10000">
           <div class="blocks2">
-          <Nav.Link style={{color:'rgb(143, 0, 145)'}} href="/QC"> entanglement </Nav.Link>
+          <Nav.Link style={{color:'rgb(143, 0, 145)'}} href="/QC">
+          entanglement </Nav.Link>
           <img class='v2b' src={v2}/>
           </div>
           </Carousel.Item>
           <Carousel.Item interval="10000">
           <div class="blocks2">
-          <Nav.Link style={{color:'rgb(143, 0, 145)'}} href="/QC"> teleportation </Nav.Link>
+          <Nav.Link style={{color:'rgb(143, 0, 145)'}} href="/QC">
+          teleportation </Nav.Link>
           <img class='v2b' src={v2}/>
           </div>
           </Carousel.Item >
@@ -152,20 +156,23 @@ class Labs2 extends Component {
           transform:'translate(-600px,340px)',width:"340px", height:'90px%',padding:'27px',margin:'19px', borderRadius:'9px'}}>
           <Carousel.Item>
           <div class="blocks2">
-          <Nav.Link style={{color:'rgb(143, 0, 145)'}}href="/QC"> Deutsch-Josza </Nav.Link>
-          <img class='v2' src={v2}/>
-          </div>
-          </Carousel.Item>
-          <Carousel.Item>
-          <div class="blocks2">
-          <Nav.Link style={{color:'rgb(143, 0, 145)'}} href="/QC"> quantum fourier transform </Nav.Link>
+          <Nav.Link style={{color:'rgb(143, 0, 145)'}} href="/QC">
+          quantum fourier transform </Nav.Link>
           <img class='v2' src={v2}/>
           <img class='v2' src={v2}/>
           </div>
           </Carousel.Item>
           <Carousel.Item>
           <div class="blocks2">
-          <Nav.Link style={{color:'rgb(143, 0, 145)'}} href="/QC"> Grover's algorithm </Nav.Link>
+          <Nav.Link style={{color:'rgb(143, 0, 145)'}}href="/QC">
+          Deutsch-Josza </Nav.Link>
+          <img class='v2' src={v2}/>
+          </div>
+          </Carousel.Item>
+          <Carousel.Item>
+          <div class="blocks2">
+          <Nav.Link style={{color:'rgb(143, 0, 145)'}} href="/QC">
+          Grover's algorithm </Nav.Link>
           <img class='v2b' src={v2}/>
           </div>
           </Carousel.Item>

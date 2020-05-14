@@ -3,7 +3,7 @@
   margin: 0px;
   color: rgba(255, 61, 12, 0.60);
   opacity: 60%;
-  
+
 }
 
 .unit{
@@ -96,6 +96,18 @@
 }
 @keyframes blocks {
   50%{  background-color: rgba(145, 255, 0,0.79);}
+}
+.df {
+  animation: df;
+  animation-duration: 4s;
+  animation-iteration-count:infinite ;
+  height:60px;
+  width: 60px;
+background: linear-gradient(180deg, rgba(216, 231, 255, 0.6) 0%, rgba(196, 196, 196,0.3) 100%);
+border-radius: 9px;;
+}
+@keyframes df{
+  50%{width:180px}
 }
 
 .button2{
