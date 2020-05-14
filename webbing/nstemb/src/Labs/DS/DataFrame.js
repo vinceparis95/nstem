@@ -4,9 +4,9 @@ import ReactDOM from 'react-dom'
 import history from '../../history';
 import "./DS.css";
 
-var element = <li class="element"/>
+var element = <li style={{stroke:'green'}}class="element"/>
+var row = 3
 var col = 3
-var row =3
 
 var arr = []
 var i
