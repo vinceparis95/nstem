@@ -17,10 +17,9 @@ const Navigation = (props) => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
-                  <Nav.Link style={{color:'rgb(145, 63, 0)'}} href="/Labs2"> labs </Nav.Link>
-                  <Nav.Link style={{color:'rgb(145, 63, 0)'}} href="/Models">models</Nav.Link>
-                  <Nav.Link style={{color:'rgb(145, 63, 0)'}} href="/Wiki">wiki</Nav.Link>
-                  <Nav.Link style={{color:'rgb(145, 63, 0)'}} href="/Services">services</Nav.Link>
+                  <Nav.Link style={{color:'rgb(145, 63, 0)'}} href="/Labs2"> katas </Nav.Link>
+                  <Nav.Link style={{color:'rgb(145, 63, 0)'}} href="/Models"> repos</Nav.Link>
+                  <Nav.Link style={{color:'rgb(145, 63, 0)'}} href="/Wiki"> colab </Nav.Link>
               </Nav>
           </Navbar.Collapse>
         </Navbar>

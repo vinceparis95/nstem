@@ -12,3 +12,18 @@
 .Home .lander p {
     color: #999;
 }
+
+.wikicell{
+  animation: wikicell;
+  animation-duration: 2s;
+  animation-iteration-count:infinite ;
+  animation-fill-mode: forwards;
+  position: relative;
+  border-radius: 14px;
+  margin: 19px
+}
+
+@keyframes wikicell {
+  50%{opacity: 36%  ;}
+  50{  background-color: rgba(145, 63, 0,0.72);}
+}

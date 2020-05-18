@@ -35,30 +35,6 @@
   50%{transform: scale(1.01,1.01);}
 }
 
-.instructions{
-  font-family: "Titillium Web";
-  font-size: 14px;
-  top:320px;
-  left:36px;
-  width:340px;
-  color: #fb00ff;
-  display: flex;
-  position: absolute;
-  opacity: 45%;
-
-}
-.instructions2{
-  font-family: "Titillium Web";
-  font-size: 14px;
-  top:320px;
-  left:36px;
-  width:340px;
-  color: green;
-  position: absolute;
-  opacity: 45%;
-
-}
-
 /* DataFrame Visuals */
 .dfHeader{
   animation: dfAnimation1;
@@ -103,93 +79,252 @@
   50%{opacity:50%}
 }
 
+.btnConsole{
+  position: absolute;
+  top: 26px;
+  left: 26px;
+}
+.btnConsole2{
+  position: absolute;
+  top: 26px;
+  left: 26px;
+}
 .dfButton{
   font-family: 'Press Start 2P';
-  animation: dfAnimation1;
+  animation: buttonGlow;
   animation-duration: 2.7s;
   animation-iteration-count:infinite ;
-  padding: 9px;
-  width:51px;
-  background: #fb00ff;
-  font-size: 17px;
-  opacity:57%;
-  border: none;
-    outline:none;
-  border-radius: 9px;
+  border-style: solid;
+  background-color:  #fb00ff;
+  opacity:9%;
+  height: 24px;
+  width:25px;
   position: absolute;
-  left:30px;
-  top:250px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  left:140px;
+  top:302px;
+  border-radius: 50%;
+  border-width: 3px;
+}
+.dfButton2{
+  font-family: 'Press Start 2P';
+  animation: buttonGlow;
+  animation-duration: 2.7s;
+  animation-iteration-count:infinite ;
+  border-style: solid;
+  background-color:  .dfButton{
+    font-family: 'Press Start 2P';
+    animation: buttonGlow;
+    animation-duration: 2.7s;
+    animation-iteration-count:infinite ;
+    border-style: solid;
+    background-color:  #fb00ff;
+    opacity:9%;
+    height: 24px;
+    width:25px;
+    position: absolute;
+    left:140px;
+    top:302px;
+    border-radius: 50%;
+    border-width: 3px;
+  };
+  opacity:9%;
+  height: 24px;
+  width:25px;
+  position: absolute;
+  left:140px;
+  top:302px;
+  border-radius: 50%;
+  border-width: 3px;
+}
+@keyframes buttonGlow {
+  50%{opacity:27%}
 }
 
 button:focus {outline:0;}
 
-.dfButtonBorder{
-  animation: dfAnimation2;
-  animation-duration: 4s;
-  animation-iteration-count:infinite ;
-  border-style: solid;
-  border-color:  #fb00ff;
-  opacity:36%;
-  height: 36px;
-  width:45px;
-  position: absolute;
-  left:33px;
-  top:254px;
-  border-radius: 3px;
-}
 @keyframes dfAnimation2 {
-  50%{opacity:27%}
-  50%{transform:scale(1.0036,1.0036)}
+  50%{opacity:36%}
+  50%{border-width: 3px}
 }
 
+
+/* code boxes  */
+.codeBorder{
+  height: 277px;
+  width: 290px;
+  border: solid;
+  position:absolute;
+  top: 333px;
+  left: 35px;
+  border-radius:26px;
+  overflow: auto;
+  padding:0px;
+  background:
+  linear-gradient(180deg, rgba(104, 255, 12, 0.09) 0%, rgba(196, 196, 196, 0) 100%);
+  opacity: 60%;
+  border-color:rgba(145, 255, 0,0.27);
+  border-width:14px;
+}
+
+.textbox{
+  transform: translateY(-60px);
+  height:5px;
+}
+
+.instructions{
+  font-family: "Titillium Web";
+  font-size: 14px;
+  top:69px;
+  left:36px;
+  float: left;
+  width:320px;
+  display: flex;
+  position: relative;
+  opacity: 100%;
+  margin: 0;
+  word-wrap:break-word; max-width:36ch;
+}
+
+.instructions2{
+  animation: codeAnimation;
+    animation-fill-mode: forwards;
+  animation-duration: 0.04s;
+  animation-iteration-count:infinite ;
+  font-family: "Djakarta";
+  font-size: 18px;
+  float: left;
+  width:340px;
+  margin: 9;
+  color: #fb00ff95;
+  display: flex;
+  position: relative;
+  opacity: 100%;
+  word-wrap:break-word; max-width:19ch;
+}
+
+.instructions3{
+  animation: codeAnimation;
+    animation-fill-mode: forwards;
+  animation-duration: 0.04s;
+  animation-iteration-count:infinite ;
+  font-family: "Titillium Web";
+  font-size: 17px;
+  font-weight: bold;
+  top:69px;
+  left:36px;
+  float: left;
+  width:340px;
+  margin: 9px;
+  color: #fb00ff;
+  display: flex;
+  position: relative;
+  opacity: 100%;
+  word-wrap:break-word; max-width:19ch;
+}
+
+@keyframes codeAnimation {
+  50%{opacity: 100%}
+}
+
+.codeForm{
+  font-family: "Djakarta";
+  letter-spacing: 2px;
+  font-size: 14px;
+  width:310px;
+  display: flex;
+  opacity:60%;
+  margin: 0px;
+  word-wrap:break-word; max-width:36ch;
+}
+.goButton{
+  font-family: "Press Start 2P";
+  font-size: 12px;
+  text-align: left;
+  border-radius: 9px;
+  height: 27px;
+  width: 53px;
+  position: relative;
+  transform: translateY(0px);
+  color: rgb(104, 255, 12);
+  float:left;
+}
+button:focus {outline:0;}
+
+
+/* monitor div */
+
+.monitor{
+position: absolute;
+
+width: 540px;
+height: 540px;
+left:433px;
+background: linear-gradient( rgba(216, 231, 255, 0.09) 19%, rgba(145, 255, 0,0.07) 100%);
+border-radius: 45px;
+transform:rotateY(360deg);
+transform:translateX(-90px);
+transform:translateY(-19px);
+overflow: auto;
+border-width: 19px;
+border-style: solid;
+border-color:#fb00ff09;
+opacity: 95%;
+}
+@keyframes monitor {
+  50%{opacity: 900%}
+}
 
 /*         DataFrame Animation              */
 
-
-
 .screenDiv{
+
+  touch-action: pinch-zoom;
   animation: screenDiv;
-  animation-duration: 4s;
+  animation-duration: 9s;
   animation-iteration-count:1 ;
   animation-fill-mode: forwards;
-  position: relative;
+  transition: all 1s ease;
+  position: top left;
+  transform-origin: top left;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -moz-flex;
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  list-style: none;
-  text-align: center;
-  right:-440px;
-  top:9px;
-  padding: 0px;
-  opacity: 0%;
-    /* border-style: solid;
-  border-color: rgba(251, 0, 255,0.06);
-  border-width: 5px; */
   background: linear-gradient( rgba(2245, 240, 211, 0.45) 0%, rgba(245, 240, 211,.6) 100%);
   border-radius: 27px;;
+  display: table;
+  display: table-cell;
 }
 @keyframes screenDiv {
   100%{  padding: 9px;}
-  100%{  opacity:100%;}
-
+  100%{  opacity: 100;}
+}
+.screenDiv:active  {
+    /* animation css */
+    animation-fill-mode: forwards;
+    transform-origin: top left;
+    transform: scale(0.2,0.2)
+}
+.slidey{
+  position: absolute;
+  left:320px;
+  top:540px;
+  width:90px;
+  transform:rotate(270deg);
 }
 .superScreen{
+  touch-action: pinch-zoom;
   display: flex;
   list-style: none;
-padding: 0;
-margin: 0;
-display: flex;
-flex-wrap: wrap;
-
+  position: relative;
+  padding: 19px;
+  margin: 19px;
+  display:flex;
+  flex-wrap: wrap;
+  padding: 19px;
+  margin-left: 19px;
 }
 .subScreen{
   display: flex;
@@ -199,36 +334,64 @@ flex-wrap: wrap;
   animation: rowAnimation;
   animation-duration: 4s;
   animation-iteration-count:1;
-  flex-wrap: wrap;
-  width: 100px;
-  height: 100px;
+  flex-wrap: nowrap;
+  width: 81px;
+  height: 59px;
   overflow: auto;
-  /* border-color: rgba(251, 0, 255,0.10);
-  border-width: 3px;
-  border-style: solid; */
   position: relative;
   list-style-type: none;
   animation-fill-mode: forwards;
-  padding: 0px;
-  transform-origin: center;
+  box-shadow:
+           rgba(230, 140, 254, 0.19) 3px 3px 5px,
+           rgba(180, 247, 17, 0.27) -3px -3px 6px;
   margin: 0px;
-  width: 0;
-  height: 0;
-  background: linear-gradient(180deg, rgba(255, 141, 250, 0.136) 99.99%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(104, 255, 12, 0.19) 0%, rgba(196, 196, 196, 0) 100%), linear-gradient(180deg, rgba(104, 255, 12, 0.19) 0%, rgba(196, 196, 196, 0) 100%);
+  background:
+    linear-gradient(180deg, rgba(255, 141, 250, 0.136) 99.99%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(180deg, rgba(104, 255, 12, 0.19) 0%, rgba(196, 196, 196, 0) 100%),
+    linear-gradient(180deg, rgba(104, 255, 12, 0.19) 0%, rgba(196, 196, 196, 0) 100%);
   border-radius: 11px;
   opacity: 00%;
 }
 @keyframes rowAnimation {
-  100%{height:60px}
-  100%{width:90px}
   100%{opacity: 100%}
   100%{margin-left: 9px}
   100%{margin-right: 9px}
-  100%{margin-top: 18px}
+  100%{margin-top: 14px}
   100%{margin-bottom: 9px}
-  100%{padding:9px;}
 }
 
 ul{
   padding-inline-start: 0px;
+}
+
+
+/* doc box */
+
+.docbox{
+  transform: translateY(-60px);
+  height:5px;
+}
+.doc{
+  font-family: "Djakarta";
+  letter-spacing: 0px;
+  font-size:17px;
+  opacity: 90%;
+  color:#822f11;
+}
+
+.docBorder{
+  height: 110px;
+  width: 340px;
+  border: solid;
+  position:absolute;
+  top: 209px;
+  left: 31px;
+  border-radius:26px;
+  overflow: auto;
+  font-size: 14px;
+  padding:9px;
+  background:
+  linear-gradient(180deg, rgba(104, 255, 12, 0.09) 0%, rgba(196, 196, 196, 0) 100%);
+  opacity: 60%;
+  border-color:rgba(145, 255, 0,0.27);
 }

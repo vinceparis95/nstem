@@ -4,6 +4,7 @@ import history from './../history';
 import './Labs.css'
 import v1 from './vectors/v1.svg';
 import v2 from './vectors/v2.svg';
+import dfword2 from './vectors/dfword2.svg'
 
 
 
@@ -27,7 +28,7 @@ class Labs2 extends Component {
             <h2 class="unitb2">
             <Nav.Link style={{color:'rgb(145, 63, 0)',
             transform:'translate(27px,177px)'}} href="/DataFrames">
-            DataFrames </Nav.Link></h2>
+            DataFrames</Nav.Link></h2>
             <h1 class="unitb"style={{width:'260px'}}>
             <Nav.Link style={{color:'rgb(143, 0, 145)',
             transform:'translateY(267px)'}} href="/DS">
@@ -50,7 +51,7 @@ class Labs2 extends Component {
           <Carousel.Item interval="10000">
             <div class="blocks2">
               <Nav.Link style={{color:'rgb(143, 0, 145)'}}href="/DS">
-            data types </Nav.Link>
+              data types </Nav.Link>
               <img class='v2' src={v2}/>
             </div>
           </Carousel.Item>
@@ -98,6 +99,7 @@ class Labs2 extends Component {
           plotting </Nav.Link>
           <img class='v2b' src={v2}/>
           </div>
+
           </Carousel.Item>
           <Carousel.Item interval="10000">
           <div class="blocks2">

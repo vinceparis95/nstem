@@ -156,14 +156,17 @@ border-radius: 9px;;
   50%{opacity:10%;}
 }
 
+
+/* carousels */
+
+.carousel0{
+    width: 900px;
+    height: 100px;
+}
 .carousel-inner{
-    width: 320px;
+    width: 900px;
     opacity: 100%;
     padding: 2px;
-    transform: translateX(27px);
-    transform: translateY(-23px);
-
-
 
 }
 .carousel-control-prev-icon,
@@ -177,32 +180,24 @@ border-radius: 9px;;
 .carousel-control-next-icon:after
 {
   content: url('./vectors/arrowR.svg');
-  font-size: 55px;
   color: rgba(99, 52, 36,1);
-  padding: 45px;
+  padding: 9px;
   position: absolute;
-  left: 3px;
-  top:-45px;
-
-
-
+  left: -383px;
+  top:45px;
 }
 
 .carousel-control-prev-icon:after {
   content: url('./vectors/arrowL.svg');
-  font-size: 55px;
   color: rgba(99, 52, 36,100);
-  padding: 19px;
+  padding: 9px;
   position: absolute;
-  left: -45px;
-  top:-19px;
+  left: -163px;
+  top:45px;
 
 }
-
-
 @keyframes carousel {
 }
-
 .blocks2{
   transform:scale(0.9,0.9)
 }
@@ -217,11 +212,7 @@ ol.carousel-indicators {
   border-radius: 15px;
   transform: translateY(-34px);
   animation: v1
-
-
-
 }
-
 ol.carousel-indicators li,
 ol.carousel-indicators li.active {
   float: left;
@@ -232,16 +223,15 @@ ol.carousel-indicators li.active {
   transform: translateX(19px);
   border-radius: 5px;
   border: 0;
-  background: rgba(145, 255, 0,0.79);
+  background: rgba(145, 255, 0,0.0);
   animation: v1;
   animation-duration: 1s;
   animation-iteration-count:infinite ;
   opacity: 45%;
 
 }
-
 ol.carousel-indicators li.active {
-  background: rgba(99, 52, 36,0.79);
+  background: rgba(99, 52, 36,0.0);
   animation: v1;
   animation-duration: 1s;
   animation-iteration-count:infinite ;
