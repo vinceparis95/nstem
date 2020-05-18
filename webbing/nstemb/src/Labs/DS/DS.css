@@ -315,6 +315,7 @@ opacity: 95%;
   transform:rotate(270deg);
 }
 .superScreen{
+  transform-origin: top left;
   touch-action: pinch-zoom;
   display: flex;
   list-style: none;
