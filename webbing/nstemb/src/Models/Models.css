@@ -27,13 +27,21 @@ body{
 
 }
 
-.unit{
-  animation: unit;
-  animation-duration: 2s;
-  animation-iteration-count:infinite ;
-  animation-fill-mode: forwards;
+.area{
   font-family: "Titillium Web";
   margin-left: 19px;
   color:rgba(143, 0, 145);
-  opacity:45%;
+  position: relative;
+
+}
+.mapWrapper{
+  transform: scale(1,1);
+  border-radius: 90px;
+}
+.mappy{
+  position: relative;
+
+  border-radius: 15px;
+  opacity: 100%;
+
 }

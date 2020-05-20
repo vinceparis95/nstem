@@ -38,7 +38,10 @@ devoq1_20 = devoq1_20.loc[:, ~devoq1_20.columns.duplicated()]
 df=pd.concat((devoq3_19,devoq1_20)).fillna(0)
 df = df.drop(['MVCI Group'], axis=1)
 df.to_csv('~/Desktop/df3.csv')
+dft = df.T
 print(df.columns)
+
+df.to_csv('~/nstem/webbing/nstemb/src/Models/vectors/df3.csv')
 
 # create plot from master
 plot = df.plot(legend=None,linewidth=7, alpha=0.09)
@@ -46,4 +49,4 @@ plot.set_ylabel('number')
 plot.set_xlabel('days')
 plt.xticks(fontsize=9, rotation=45)
 plt.locator_params(axis='x',nbins=19)
-plt.show()
+# plt.show()

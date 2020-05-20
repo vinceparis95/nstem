@@ -1,0 +1,105 @@
+body{
+ background: -webkit-linear-gradient( rgba(239, 234, 219,1),rgba(143, 0, 145, 0.0190)) ;
+ height: 100%;
+     margin: 0;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+}
+
+.mapSuperScreen{
+  transform-origin: top left;
+  touch-action: pinch-zoom;
+  display: flex;
+  list-style: none;
+  position: relative;
+  padding: 19px;
+  margin: 19px;
+  display:flex;
+  flex-wrap: wrap;
+  padding: 19px;
+  margin-left: 19px;
+}
+.mapSubScreen{
+  display: flex;
+  text-align: center;
+}
+.mapMonitor{
+position: absolute;
+width: 600px;
+height: 540px;
+left:433px;
+background: linear-gradient( rgba(216, 231, 255, 0.09) 19%, rgba(145, 255, 0,0.07) 100%);
+border-radius: 45px;
+transform:rotateY(360deg);
+transform:translateX(-90px);
+transform:translateY(-19px);
+overflow: auto;
+border-width: 19px;
+border-style: solid;
+border-color:#fb00f109;
+opacity: 95%;
+}
+@keyframes monitor {
+  50%{opacity: 10%}
+}
+
+/*         DataFrame Animation              */
+
+.mapScreenDiv{
+
+  touch-action: pinch-zoom;
+  animation: screenDiv;
+  animation-duration: 9s;
+  animation-iteration-count:1 ;
+  animation-fill-mode: forwards;
+  transition: all 1s ease;
+  position: top left;
+  transform-origin: top left;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  background: linear-gradient( rgba(2245, 240, 211, 0.45) 0%, rgba(245, 240, 211,.6) 100%);
+  border-radius: 27px;;
+  display: table;
+  display: table-cell;
+}
+@keyframes screenDiv {
+  100%{  padding: 9px;}
+  100%{  opacity: 100;}
+}
+.mapScreenDiv:active  {
+    /* animation css */
+    animation-fill-mode: forwards;
+    transform-origin: top left;
+    transform: scale(0.2,0.2)
+}
+.test1{
+  background-color: rgb(1, 234, 219);
+  height:90px;
+  width: 90px;
+  border-radius: 9px;
+  opacity: 36%;
+
+}
+
+
+
+@keyframes mapScreen{
+50%{opacity: 10%}
+}
+.mappy{
+  position: relative;
+  animation: mapScreen;
+  animation-duration: 4s;
+  animation-iteration-count:infinite ;
+  animation-fill-mode: forwards;
+  border-radius: 15px;
+  opacity: 100%;
+}
+
+@keyframes monitor {
+  50%{opacity: 10%}
+}

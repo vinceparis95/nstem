@@ -98,10 +98,6 @@ function DataFrame(){
             <button class="dfButton" onClick={()=>setToggle( (prev) => (!prev) )}>
             </button>
           </div>
-          <div class="btnConsole2" style={{left:'144px', background:'rgb(119, 1, 145)'}}>
-            <button class="dfButton2" onClick={()=>zoomIn( (prev) => (!prev) )}>
-            </button>
-          </div>
           </div>
 
           <input
@@ -110,7 +106,7 @@ function DataFrame(){
             value={sliderValue}
             min={0.1}
             max={1}
-            step={0.1}
+            step={0.01}
             onChange={e => setSliderValue(e.target.value)}
           />
 
