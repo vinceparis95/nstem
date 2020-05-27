@@ -3,13 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@magenta/music": "^1.15.0",
+    "@tonaljs/tonal": "^4.0.1",
     "bootstrap": "^4.3.1",
     "jquery": "^3.5.1",
+    "magenta": "0.0.0",
     "react": "^16.9.0",
     "react-bootstrap": "^1.0.0-beta.11",
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.0",
+    "tone": "^13.8.25",
     "zebras": "0.0.18"
   },
   "scripts": {

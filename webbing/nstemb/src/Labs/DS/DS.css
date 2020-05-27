@@ -105,6 +105,7 @@
   border-radius: 50%;
   border-width: 3px;
 }
+
 .dfButton2{
   font-family: 'Press Start 2P';
   animation: buttonGlow;
@@ -126,7 +127,8 @@
     top:302px;
     border-radius: 50%;
     border-width: 3px;
-  };
+  }}
+.goButton{
   opacity:9%;
   height: 24px;
   width:25px;

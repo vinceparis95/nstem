@@ -1,0 +1,122 @@
+.beatfrog{
+  position: relative;
+  left:90px;
+  margin: 0px;
+  animation: beatfrog;
+  animation-duration: 1s;
+  animation-delay: .0s;
+  animation-iteration-count: infinite;
+  height: 3px;
+  width:3px;
+  border-radius:45%;
+  background: -webkit-radial-gradient(
+    rgba(143, 0, 145,0.27),rgba(104, 255, 12, 0.09));
+  opacity: 0%;
+}
+@keyframes beatfrog{
+  50%{transform: scale(27,27);}
+  50%{opacity:36%;}
+  100%{transform: rotate(180deg);}
+
+}
+
+.beatfrog2{
+  position: relative;
+  margin: 0px;
+  left:180px;
+  animation: beatfrog2;
+  animation-duration: 1s;
+  animation-delay: .25s;
+  animation-iteration-count: infinite;
+  height: 3px;
+  width:3px;
+  border-radius:45%;
+  background: -webkit-radial-gradient(
+    rgba(145, 255, 0,0.6),rgba(143, 0, 145,.19));
+  opacity: 0%;
+}
+
+@keyframes beatfrog2{
+  50%{transform: scale(19,19);}
+  50%{transform: scale(19,19);}
+  50%{opacity:36%;}
+
+  100%{transform: rotate(180deg);}
+
+}
+.beatfrog3{
+  position: relative;
+  left:0px;
+  animation: beatfrog3;
+  animation-duration: 1s;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+  height: 3px;
+  width:3px;
+  border-radius:36%;
+  background: -webkit-radial-gradient(
+    rgba(143, 0, 145,.9),rgba(145, 255, 0,0.79));
+  opacity: 0%;
+}
+@keyframes beatfrog3{
+  50%{transform: scale(19,19);}
+  50%{transform: scale(19,19);}
+  50%{opacity:36%;}
+  100%{transform: rotate(180deg);}
+}
+
+.beatfrog4{
+  position: relative;
+  left:0px;
+  animation: beatfrog4;
+  animation-duration: 1s;
+  animation-delay: .75s;
+  animation-iteration-count: infinite;
+  height: 3px;
+  width:3px;
+  border-radius:36%;
+  background: -webkit-radial-gradient(
+    rgba(143, 0, 145,.45),rgba(145, 255, 0,0.6));
+  opacity: 0%;
+}
+@keyframes beatfrog4{
+  50%{transform: scale(19,19);}
+  50%{transform: scale(19,19);}
+  50%{opacity:36%;}
+  100%{transform: rotate(180deg);}
+}
+
+.env{
+  margin: 19px;
+  padding: 19px;
+  position: relative;
+  border-radius: 19px;
+  height:260px;
+  width:290px;
+  background-color:  rgba(239, 234, 219,1) ;
+}
+.garden1{
+  background-color: rgba(145, 63, 0,0.009);
+  margin: 19px;
+  padding:19px;
+  height:144px;
+  width:260px;
+  border-radius: 19px;
+}
+
+.b1a{
+  background-color: rgba(145, 63, 0,0.09);
+  margin: 19px;
+  padding:19px;
+  height:144px;
+  width:260px;
+  border-radius: 19px;
+}
+.b1b{
+  background-color: rgba(145, 63, 0,0.009);
+  margin: 19px;
+  padding:19px;
+  height:144px;
+  width:260px;
+  border-radius: 19px;
+}

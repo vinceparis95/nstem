@@ -1,0 +1,140 @@
+body{
+ background: -webkit-linear-gradient( rgba(239, 234, 219,1),rgba(143, 0, 145, 0.0190)) ;
+ height: 100%;
+     margin: 0;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+}
+
+
+.dalalFamily{
+  position: absolute;
+  left: 90px;
+  animation: dalalFamily;
+  animation-duration: 7s;
+  animation-iteration-count:infinite ;
+  animation-fill-mode: forwards;
+  background-color: rgb(143, 0, 145);
+  border-radius: 50%;
+  margin: 0px;
+  height: 19px;
+  width:19px;
+  opacity: 10%
+}
+@keyframes dalalFamily {
+  5%{opacity:0%};
+ 5%{transform:scale(1,1)};
+9%{opacity:0%};
+ 9%{transform:scale(1,1)};
+14%{opacity:19%};
+ 14%{transform:scale(2,2);
+18%{opacity:0%};
+ 18%{transform:scale(0,0)};
+23%{opacity:0%};
+ 23%{transform:scale(0,0)};
+28%{opacity:19%};
+ 28%{transform:scale(2,2)};
+32%{opacity:0%};
+ 32%{transform:scale(0,0)};
+37%{opacity:0%};
+ 37%{transform:scale(0,0)};
+41%{opacity:19%};
+ 41%{transform:scale(2,2)};
+46%{opacity:0%};
+ 46%{transform:scale(0,0);
+51%{opacity:0%};
+ 51%{transform:scale(0,0)};
+55%{opacity:19%};
+ 55%{transform:scale(2,2)};
+60%{opacity:0%};
+ 60%{transform:scale(0,0)};
+64%{opacity:0%};
+ 64%{transform:scale(0,0)};
+69%{opacity:19%};
+ 69%{transform:scale(2,2)};
+74%{opacity:0%};
+ 74%{transform:scale(0,0)};
+78%{opacity:0%};
+ 78%{transform:scale(0,0)};
+83%{opacity:19%};
+ 83%{transform:scale(2,2)};
+87%{opacity:0%};
+ 87%{transform:scale(0,0)};
+92%{opacity:0%};
+92%{transform:scale(0,0)}};
+97%{opacity:19%};
+ 97%{transform:scale(2,2)};
+}
+}
+.ziaiFamily{
+  position: absolute;
+  animation: ziaiFamily;
+  animation-duration: 3s;
+  animation-iteration-count:infinite ;
+  animation-fill-mode: forwards;
+  background-color: rgb(143, 0, 145);
+  border-radius: 50%;
+  margin: 0px;
+  height: 19px;
+  width:19px;
+
+}
+@keyframes ziaiFamily {
+
+}
+.trulearFamily{
+  position: absolute;
+  animation: trulearFamily;
+  animation-duration: 3s;
+  animation-iteration-count:infinite ;
+  animation-fill-mode: forwards;
+  background-color: rgb(143, 0, 145);
+  border-radius: 50%;
+  margin: 0px;
+  height: 19px;
+  width:19px;
+
+}
+@keyframes trulearFamily {
+50%{opacity: 19%}
+78%{transform:scale(2,2)};
+
+
+}
+.jalehnajmiDawn{
+  position: absolute;
+  animation: jalehnajmiDawn;
+  animation-duration: 3s;
+  animation-iteration-count:infinite ;
+  animation-fill-mode: forwards;
+  background-color: rgb(143, 0, 145);
+  border-radius: 50%;
+  margin: 0px;
+  height: 19px;
+  width:19px;
+
+}
+@keyframes jalehnajmiDawn {
+
+}
+.trulearDawn{
+  position: absolute;
+  animation: trulearDawn;
+  animation-duration: 3s;
+  animation-iteration-count:infinite ;
+  animation-fill-mode: forwards;
+  background-color: rgb(143, 0, 145);
+  margin: 0px;
+  height: 19px;
+  width:19px;
+
+}
+@keyframes trulearDawn {
+
+}
+.ethan{
+
+}
+@keyframes ethan {
+
+}

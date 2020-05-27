@@ -10,16 +10,15 @@ const Navigation = (props) => {
       <div>
 
         <Navbar style={{backgroundColor:'rgba(145, 255, 0,0.79)', opacity:'49%',
-                      fontFamily:'Titillium Web', fontSize:'19px', width:'361px',
+                      fontFamily:'Titillium Web', fontSize:'19px', width:'243px',
                       margin:'14px', borderRadius:'7px', fontWeight:'bold',
                     color:'white'}}>
           <Navbar.Brand style={{fontSize:'25px', color:'rgb(143, 0, 145)'}} href="/">nStem</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
-                  <Nav.Link style={{color:'rgb(145, 63, 0)'}} href="/Labs2"> katas </Nav.Link>
-                  <Nav.Link style={{color:'rgb(145, 63, 0)'}} href="/Models"> repos</Nav.Link>
-                  <Nav.Link style={{color:'rgb(145, 63, 0)'}} href="/Wiki"> colab </Nav.Link>
+                  <Nav.Link style={{color:'rgb(145, 63, 0)'}} href="/Labs2"> labs </Nav.Link>
+                  <Nav.Link style={{color:'rgb(145, 63, 0)'}} href="/Models"> models</Nav.Link>
               </Nav>
           </Navbar.Collapse>
         </Navbar>

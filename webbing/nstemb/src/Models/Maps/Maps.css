@@ -6,100 +6,323 @@ body{
      background-attachment: fixed;
 }
 
-.mapSuperScreen{
-  transform-origin: top left;
-  touch-action: pinch-zoom;
-  display: flex;
-  list-style: none;
-  position: relative;
-  padding: 19px;
-  margin: 19px;
-  display:flex;
-  flex-wrap: wrap;
-  padding: 19px;
-  margin-left: 19px;
-}
-.mapSubScreen{
-  display: flex;
-  text-align: center;
-}
-.mapMonitor{
-position: absolute;
-width: 600px;
-height: 540px;
-left:433px;
-background: linear-gradient( rgba(216, 231, 255, 0.09) 19%, rgba(145, 255, 0,0.07) 100%);
-border-radius: 45px;
-transform:rotateY(360deg);
-transform:translateX(-90px);
-transform:translateY(-19px);
-overflow: auto;
-border-width: 19px;
-border-style: solid;
-border-color:#fb00f109;
-opacity: 95%;
-}
-@keyframes monitor {
-  50%{opacity: 10%}
+.animap{
+  width: 45px;
+  height:45px;
+  padding: 45px;
+  margin: 45px;
 }
 
-/*         DataFrame Animation              */
-
-.mapScreenDiv{
-
-  touch-action: pinch-zoom;
-  animation: screenDiv;
-  animation-duration: 9s;
-  animation-iteration-count:1 ;
-  animation-fill-mode: forwards;
-  transition: all 1s ease;
-  position: top left;
-  transform-origin: top left;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-  background: linear-gradient( rgba(2245, 240, 211, 0.45) 0%, rgba(245, 240, 211,.6) 100%);
-  border-radius: 27px;;
-  display: table;
-  display: table-cell;
-}
-@keyframes screenDiv {
-  100%{  padding: 9px;}
-  100%{  opacity: 100;}
-}
-.mapScreenDiv:active  {
-    /* animation css */
-    animation-fill-mode: forwards;
-    transform-origin: top left;
-    transform: scale(0.2,0.2)
-}
-.test1{
-  background-color: rgb(1, 234, 219);
-  height:90px;
-  width: 90px;
-  border-radius: 9px;
-  opacity: 36%;
-
-}
-
-
-
-@keyframes mapScreen{
-50%{opacity: 10%}
-}
-.mappy{
-  position: relative;
-  animation: mapScreen;
-  animation-duration: 4s;
+.d1{
+  position: absolute;
+  animation: a1;
+  animation-duration: 3s;
   animation-iteration-count:infinite ;
   animation-fill-mode: forwards;
-  border-radius: 15px;
+  background-color: rgb(143, 0, 145);
+  margin: 0px;
+  height: 19px;
+  width:19px;
+  opacity: 9%;
+  font-family: "Djakarta";
+  font-size:0px;
+  font-weight: bold;
+  justify-content: center;
   opacity: 100%;
+
+}
+@keyframes a1 {
+  0%{opacity: 0%}
+  5%{opacity: 0% ;}
+  10%{opacity: 9%}
+  20%{opacity: 0%}
+  30%{opacity: 0%}
+  40%{opacity: 0%}
+  50%{opacity: 0% ;}
+  60%{opacity: 0%}
+  70%{opacity: 0%}
+  80%{opacity: 0%}
+  90%{opacity: 0%}
+  100%{opacity: 0%}
+}
+.d2{
+  position: absolute;
+  animation: a2;
+  animation-duration: 3s;
+  animation-iteration-count:infinite ;
+  animation-fill-mode: forwards;
+  background-color: rgb(143, 0, 145);
+  margin: 0px;
+  height: 19px;
+  width:19px;
+  opacity: 9%;
+  font-family: "Djakarta";
+  font-size:0px;
+  font-weight: bold;
+  justify-content: center;
+  opacity: 0%
+}
+@keyframes a2 {
+
+  0%{opacity: 0%}
+  5%{opacity: 0% ;}
+  10%{opacity: 0%}
+  20%{opacity: 9%}
+  30%{opacity: 0%}
+  40%{opacity: 0%}
+  50%{opacity: 0% ;}
+  60%{opacity: 0%}
+  70%{opacity: 0%}
+  80%{opacity: 0%}
+  90%{opacity: 0%}
+  100%{opacity: 0%}
+
+}
+.d3{
+  position: absolute;
+  animation: a3;
+  animation-duration: 3s;
+  animation-iteration-count:infinite ;
+  animation-fill-mode: forwards;
+  background-color: rgb(143, 0, 145);
+  margin: 0px;
+  height: 19px;
+  width:19px;
+  opacity: 9%;
+  font-family: "Djakarta";
+  font-size:0px;
+  font-weight: bold;
+  justify-content: center;
+  opacity: 0%
+}
+@keyframes a3 {
+  0%{opacity: 0%}
+  5%{opacity: 0% ;}
+  10%{opacity: 0%}
+  20%{opacity: 0%}
+  30%{opacity: 9%}
+  40%{opacity: 0%}
+  50%{opacity: 0% ;}
+  60%{opacity: 0%}
+  70%{opacity: 0%}
+  80%{opacity: 0%}
+  90%{opacity: 0%}
+  100%{opacity: 0%}
+}
+.d4{
+  position: absolute;
+  animation: d4;
+  animation-duration: 3s;
+  animation-iteration-count:infinite ;
+  animation-fill-mode: forwards;
+  background-color: rgb(143, 0, 145);
+  margin: 0px;
+  height: 19px;
+  width:19px;
+  opacity: 9%;
+  font-family: "Djakarta";
+  font-size:0px;
+  font-weight: bold;
+  justify-content: center;
+  opacity: 0%
+}
+@keyframes d4 {
+  0%{opacity: 0%}
+  5%{opacity: 0% ;}
+  10%{opacity: 0%}
+  20%{opacity: 0%}
+  30%{opacity: 0%}
+  40%{opacity: 9%}
+  50%{opacity: 0% ;}
+  60%{opacity: 0%}
+  70%{opacity: 0%}
+  80%{opacity: 0%}
+  90%{opacity: 0%}
+  100%{opacity: 0%}
+}
+.d5{
+  position: absolute;
+  animation: a5;
+  animation-duration: 3s;
+  animation-iteration-count:infinite ;
+  animation-fill-mode: forwards;
+  background-color: rgb(143, 0, 145);
+  margin: 0px;
+  height: 19px;
+  width:19px;
+  opacity: 9%;
+  font-family: "Djakarta";
+  font-size:0px;
+  font-weight: bold;
+  justify-content: center;
+  opacity: 0%
+}
+@keyframes a5 {
+
+  0%{opacity: 0%}
+  5%{opacity: 0% ;}
+  10%{opacity: 0%}
+  20%{opacity: 0%}
+  30%{opacity: 0%}
+  40%{opacity: 0%}
+  50%{opacity: 9% ;}
+  60%{opacity: 0%}
+  70%{opacity: 0%}
+  80%{opacity: 0%}
+  90%{opacity: 0%}
+  100%{opacity: 0%}
+
+}
+.d6{
+  position: absolute;
+  animation: a6;
+  animation-duration: 3s;
+  animation-iteration-count:infinite ;
+  animation-fill-mode: forwards;
+  background-color: rgb(143, 0, 145);
+  margin: 0px;
+  height: 19px;
+  width:19px;
+  opacity: 9%;
+  font-family: "Djakarta";
+  font-size:0px;
+  font-weight: bold;
+  justify-content: center;
+  opacity: 0%
+}
+@keyframes a6 {
+  0%{opacity: 0%}
+  5%{opacity: 0% ;}
+  10%{opacity: 0%}
+  20%{opacity: 0%}
+  30%{opacity: 0%}
+  40%{opacity: 0%}
+  50%{opacity: 0% ;}
+  60%{opacity: 9%}
+  70%{opacity: 0%}
+  80%{opacity: 0%}
+  90%{opacity: 0%}
+  100%{opacity: 0%}
+}
+.d7{
+  position: absolute;
+  animation: a7;
+  animation-duration: 3s;
+  animation-iteration-count:infinite ;
+  animation-fill-mode: forwards;
+  background-color: rgb(143, 0, 145);
+  margin: 0px;
+  height: 19px;
+  width:19px;
+  opacity: 9%;
+  font-family: "Djakarta";
+  font-size:0px;
+  font-weight: bold;
+  justify-content: center;
+  opacity: 0%
+}
+@keyframes a7 {
+  0%{opacity: 0%}
+  5%{opacity: 0% ;}
+  10%{opacity: 0%}
+  20%{opacity: 0%}
+  30%{opacity: 0%}
+  40%{opacity: 0%}
+  50%{opacity: 0% ;}
+  60%{opacity: 0%}
+  70%{opacity: 9%}
+  80%{opacity: 0%}
+  90%{opacity: 0%}
+  100%{opacity: 0%}
+}
+.d8{
+  position: absolute;
+  animation: a8;
+  animation-duration: 3s;
+  animation-iteration-count:infinite ;
+  animation-fill-mode: forwards;
+  background-color: rgb(143, 0, 145);
+  margin: 0px;
+  height: 19px;
+  width:19px;
+  opacity: 9%;
+  font-family: "Djakarta";
+  font-size:0px;
+  font-weight: bold;
+  justify-content: center;
+  opacity: 0%
+}
+@keyframes a8 {
+
+  0%{opacity: 0%}
+  5%{opacity: 0% ;}
+  10%{opacity: 0%}
+  20%{opacity: 0%}
+  30%{opacity: 0%}
+  40%{opacity: 0%}
+  50%{opacity: 0% ;}
+  60%{opacity: 0%}
+  70%{opacity: 0%}
+  80%{opacity: 0%}
+  90%{opacity: 9%}
+  100%{opacity: 0%}
+
+}
+.d9{
+  position: absolute;
+  animation: a9;
+  animation-duration: 3s;
+  animation-iteration-count:infinite ;
+  animation-fill-mode: forwards;
+  background-color: rgb(143, 0, 145);
+  margin: 0px;
+  height: 19px;
+  width:19px;
+  opacity: 9%;
+  font-family: "Djakarta";
+  font-size:0px;
+  font-weight: bold;
+  justify-content: center;
+  opacity: 0%
+}
+@keyframes a9 {
+  0%{opacity: 0%}
+  5%{opacity: 0% ;}
+  10%{opacity: 0%}
+  20%{opacity: 0%}
+  30%{opacity: 0%}
+  40%{opacity: 0%}
+  50%{opacity: 0% ;}
+  60%{opacity: 0%}
+  70%{opacity: 0%}
+  80%{opacity: 0%}
+  90%{opacity: 0%}
+  100%{opacity: 9%}
 }
 
-@keyframes monitor {
-  50%{opacity: 10%}
+
+.LSA{
+}
+.Mohadjeri.family{
+  height: 45px;
+  width:45px;
+  animation-fill-mode: forwards;
+  transform: scale(0.2,0.2);
+  transform: translate(180px, 90px);
+  padding: 19px;
+}
+.Tichenor.family{
+  height: 45px;
+  width:45px;
+  animation-fill-mode: forwards;
+  transform: scale(0.2,0.2);
+  transform: translate(160px, 70px);
+  padding: 19px;
+}
+
+.Dannells-Krieger{
+  position: absolute;
+  animation-fill-mode: forwards;
+  transform: scale(0.2,0.2);
+  transform: translate(180px, -360px);
 }

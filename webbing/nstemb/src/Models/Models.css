@@ -29,7 +29,7 @@ body{
 
 .area{
   font-family: "Titillium Web";
-  margin-left: 19px;
+  margin-left: -9px;
   color:rgba(143, 0, 145);
   position: relative;
 
@@ -44,4 +44,16 @@ body{
   border-radius: 15px;
   opacity: 100%;
 
+}
+
+.modelbox{
+  height: 430px;
+  width: 252px;
+  border: solid;
+  position:absolute;
+  border-radius:26px;
+  padding:9px;
+  margin:19px;
+  overflow: auto;
+  border-color: rgba(255, 61, 12, 0.10)
 }
