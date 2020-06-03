@@ -12,10 +12,10 @@ import Python from "./Labs/DS/Python";
 import Models from "./Models/Models";
 import Maps from "./Models/Maps/Maps";
 import Map2 from "./Models/Maps/Map2";
-import Beat from "./Models/Beats/Beat";
-import Beat2 from "./Models/Beats/Beat2";
-import Beat3 from "./Models/Beats/Beat3";
-
+import Beat2 from "./Models/BeatFrame/Beat2";
+import Beat3 from "./Models/BeatFrame/Beat3";
+import Quanta from "./Models/Quanta/Quanta";
+import PaintFrame from "./Models/PaintFrame/PaintFrame";
 
 
 import Services from "./Services/Services";
@@ -34,9 +34,12 @@ export default class Routes extends Component {
                     <Route path="/Models" component={Models} />
                     <Route path="/Maps" component={Maps} />
                     <Route path="/Map2" component={Map2} />
-                    <Route path="/Beat" component={Beat} />
                     <Route path="/Beat2" component={Beat2} />
                     <Route path="/Beat3" component={Beat3} />
+                    <Route path="/Quanta" component={Quanta} />
+                    <Route path="/PaintFrame" component={PaintFrame} />
+
+
 
                     <Route path="/Wiki"  component={Wiki} />
                     <Route path="/Thread"  component={Thread} />

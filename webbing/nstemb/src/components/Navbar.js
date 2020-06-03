@@ -9,18 +9,12 @@ const Navigation = (props) => {
     return (
       <div>
 
-        <Navbar style={{backgroundColor:'rgba(145, 255, 0,0.79)', opacity:'49%',
-                      fontFamily:'Titillium Web', fontSize:'19px', width:'243px',
-                      margin:'14px', borderRadius:'7px', fontWeight:'bold',
-                    color:'white'}}>
-          <Navbar.Brand style={{fontSize:'25px', color:'rgb(143, 0, 145)'}} href="/">nStem</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto">
-                  <Nav.Link style={{color:'rgb(145, 63, 0)'}} href="/Labs2"> labs </Nav.Link>
-                  <Nav.Link style={{color:'rgb(145, 63, 0)'}} href="/Models"> models</Nav.Link>
-              </Nav>
-          </Navbar.Collapse>
+        <Navbar className='root' style={{backgroundColor:'rgba(145, 255, 0,0.79)', opacity:'49%',
+                      fontFamily:'Djakarta', letterSpacing:'4px', fontSize:'19px', width:'145px',
+                      margin:'19px', borderRadius:'14px', fontWeight:'bold',
+                    color:'white'
+                  }}>
+          <Navbar.Brand style={{fontSize:'25px', color:'rgb(143, 0, 145)'}} href="/Labs2">rootpath</Navbar.Brand>
         </Navbar>
 
       </div>

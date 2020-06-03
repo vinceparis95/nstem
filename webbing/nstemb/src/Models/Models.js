@@ -41,7 +41,7 @@ padding: '0px',textDecoration:'none',backgroundColor:'', opacity:'49%'}}>
                 <Accordion.Toggle as={Button} variant="link" eventKey="0"
                  style={{fontSize: '27px', margin:'0px',textDecoration:'none',
                  color:'rgb(143, 0, 145)'}}>
-                 maps
+                 art
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="0">
@@ -80,7 +80,7 @@ padding: '0px',textDecoration:'none',backgroundColor:'', opacity:'49%'}}>
                 <Accordion.Toggle as={Button} variant="link" eventKey="0"
                  style={{fontSize: '27px', margin:'0px',textDecoration:'none',
                  color:'rgb(143, 0, 145)'}}>
-                 music
+                 quantum
                  </Accordion.Toggle>
               </Card.Header>
 

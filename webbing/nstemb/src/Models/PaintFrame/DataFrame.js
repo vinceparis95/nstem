@@ -35,21 +35,20 @@ function DataFrame(){
         position:'absolute',left:'36px', top: '160px',color:'rgb(143, 0, 145)'}}>
         </div>
 
-
+        <div class="docBorder">
+        <p class="doc">
+        The DataFrame is a powerful structure that can hold data.
+        To construct a DataFrame, say:
+        <br/> <p class="instructions2" >pd.DataFrame( )</p> <br/>
+        </p>
+        </div>
 
 
         <div >
-
           <h1 class="dfHeader" style={{left:'30px'}}>
-          BeatFrame<br></br></h1>
-
-          <div class="docBorder">
-          <p class="doc">
-          The simple way to create a beat is to create a BeatFrame
-
-          <br/> <p class="instructions2" >pd.DataFrame( )</p> <br/>
-          </p>
-          </div>
+          DataFrames :<br></br></h1>
+          <h1  class='dfHeader2'style={{top:'150px',left:'30px'}}>
+          constructor</h1>
 
           <div class="codeBorder" style={{scrollbarColor:'#6a00ff'}}>
           <div class="textbox" style={{width:'180px'}}>
@@ -75,7 +74,22 @@ function DataFrame(){
               <input class='goButton' type="submit" value="run" />
           </form>
             <br/><br/></p>
-          
+          <p class="instructions3">
+          <form class="codeForm">
+            <label>
+            input code:
+              <input type="number" name="dimension" />
+            </label>
+              <input class='goButton' type="submit" value="run" />
+          </form></p>
+          <p class="instructions3">
+          <form class="codeForm">
+            <label>
+            input code:
+              <input type="number" name="dimension" />
+            </label>
+              <input class='goButton' type="submit" value="run" />
+          </form> </p>
 
           </div>
           </div>
@@ -89,8 +103,6 @@ function DataFrame(){
           <input
           class="slidey"
             type="range"
-            style={{transform:'translate(144px,-49px)',opacity:'9%'}}
-
             value={sliderValue}
             min={0.1}
             max={1}
@@ -99,7 +111,7 @@ function DataFrame(){
           />
 
 
-          <div class="monitor"style={{width:'490px', height:'500px'}}>
+          <div class="monitor"style={{}}>
           <div ref={ref}class="superScreen">
             <div   class="screenDiv" >
               <div id="subScreen" class="subScreen">
