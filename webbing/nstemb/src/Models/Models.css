@@ -1,5 +1,6 @@
 body{
- background: -webkit-linear-gradient( rgba(239, 234, 219,1),rgba(143, 0, 145, 0.0190)) ;
+  background: -webkit-linear-gradient( rgba(239, 234, 219,.26),rgba(143,144, 145, 0.190)) ;
+
  height: 100%;
      margin: 0;
      background-repeat: no-repeat;

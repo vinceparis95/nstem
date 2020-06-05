@@ -5,22 +5,22 @@ import { Router, Switch, Route } from "react-router-dom";
 import Home from "./Home/Home";
 
 import Labs2 from "./Labs/Labs2";
-import DS from "./Labs/DS/DS"
-import DataFrame from "./Labs/DS/DataFrame"
-import Python from "./Labs/DS/Python";
 
 import Models from "./Models/Models";
 import Maps from "./Models/Maps/Maps";
 import Map2 from "./Models/Maps/Map2";
-import Beat2 from "./Models/BeatFrame/Beat2";
-import Beat3 from "./Models/BeatFrame/Beat3";
+import BeatFrame from "./Models/BeatFrame/BeatFrame"
+import Beat2 from "./Models/MelodyBox/Beat2";
+import Beat3 from "./Models/MelodyBox/Beat3";
 import Quanta from "./Models/Quanta/Quanta";
+import ClassBox from "./Models/ClassBox/ClassBox";
+import CamBox from "./Models/CamBox/CamBox";
+import CamBox2 from "./Models/CamBox/CamBox2";
+
+import Clusterer from "./Models/Clusterer/Clusterer";
 import PaintFrame from "./Models/PaintFrame/PaintFrame";
 
 
-import Services from "./Services/Services";
-import Wiki from "./Wiki/Wiki";
-import Thread from "./Wiki/Thread/Thread";
 
 import history from './history';
 
@@ -37,20 +37,18 @@ export default class Routes extends Component {
                     <Route path="/Beat2" component={Beat2} />
                     <Route path="/Beat3" component={Beat3} />
                     <Route path="/Quanta" component={Quanta} />
+                    <Route path="/ClassBox" component={ClassBox}/>
+                    <Route path="/CamBox" component={CamBox}/>
+                    <Route path="/CamBox2" component={CamBox2}/>
+
+
+
+
                     <Route path="/PaintFrame" component={PaintFrame} />
 
-
-
-                    <Route path="/Wiki"  component={Wiki} />
-                    <Route path="/Thread"  component={Thread} />
-
                     <Route path="/Labs2" component={Labs2} />
-                    <Route path="/DataFrames" component={DataFrame} />
-                    <Route path="/Python" component={Python} />
+                    <Route path="/BeatFrame" component={BeatFrame} />
 
-                    <Route path="/Services" component={Services} />
-
-                    <Route path="/Services" component={Services} />
                 </Switch>
             </Router>
         )

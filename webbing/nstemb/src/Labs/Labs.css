@@ -1,9 +1,10 @@
 .arcade{
   left:19px;
+  top:;
   position: absolute;
   overflow: auto;
-  height: 504px;
-  width:900px;
+  height: 450px;
+  width:810px;
   border-width: 9px;
   border: solid;
   border-radius: 45px;
@@ -167,23 +168,34 @@
 
 .carousel0{
     width: 900px;
-    height: 100px;
+    height: 180px;
 }
 .carousel-inner{
     width: 900px;
+    height:180px;
     opacity: 100%;
     padding: 2px;
     position: absolute;
     top: -9px;
-    left: -9px;
+    left: 19px;
+    margin-top: 9px;
+
 
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  height: 100px;
-  position:absolute;
+  height: 9px;
   border-radius: 50%;
   background-image: none;
+
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  height: 5px;
+  width:5px;
+  background-image: none;
+
 }
 
 .carousel-control-next-icon:after
@@ -191,7 +203,7 @@
   content: url('./vectors/r1.svg');
   padding: 9px;
   position: absolute;
-  left: -383px;
+  left: -400px;
   top:45px;
   animation-name: buttonCarousel;
   animation-duration: 4s;
@@ -203,7 +215,7 @@
   content: url('./vectors/l1.svg');
   padding: 9px;
   position: absolute;
-  left: -163px;
+  left: -119px;
   top:45px;
   animation-name: buttonCarousel;
   animation-duration: 4s;
@@ -217,10 +229,19 @@
 
 .blocks2{
   transform:scale(0.9,0.9);
+  height:144px;
   padding: 0px;
-  display:inline-block;
-  margin-left: 39px;
+  display:inline-table;
+  margin-left: 45px;
 }
+.blocks2{
+  transform:scale(0.9,0.9);
+  height:144px;
+  padding: 0px;
+  display:inline-table;
+  margin-left: 45px;
+}
+
 
 ol.carousel-indicators {
   position: absolute;
@@ -237,7 +258,7 @@ ol.carousel-indicators li.active {
   float: left;
   width: 19px;
   height: 9px;
-  margin: 9px;
+  margin: 90px;
   transform: translateX(19px);
   border-radius: 5px;
   border: 0;
@@ -392,4 +413,250 @@ border-radius: 9px;;
   transform: rotate(90deg);
 }
 
-/* pink */
+
+.axis{
+  animation: axis;
+  animation-duration: 1s;
+  animation-iteration-count:infinite ;
+  position: absolute;
+  border-color:rgba(145, 255, 0,0.0);
+  opacity: 45%;
+  left: -43px;
+  top:-63px;
+
+}
+@keyframes axis{
+  50%{transform:scale(.8,.8)}
+  50%{opacity: 60%}
+
+}
+
+.clusterbox{
+  animation: clusterbox;
+  position: absolute;
+  left: -90px;
+  top:-9px;
+  animation-duration: 4.9s;
+  animation-iteration-count:infinite ;
+  transform: scale(.6,.6) ;
+  opacity:50%
+
+}
+@keyframes clusterbox{
+  50%{transform:scale(.5,.5)}
+  50%{opacity:100%}
+
+
+}
+.clusters{
+  animation: clusters;
+  position: absolute;
+  left: -29px;
+  top:19px;
+  animation-duration: 2.7s;
+  animation-iteration-count:infinite ;
+  transform: scale(.6,.6) ;
+  opacity:0%
+
+}
+.clusters2{
+  animation: clusters2;
+  position: absolute;
+  left: 32px;
+  top:76.5px;
+  animation-duration: 2.9s;
+  animation-iteration-count:infinite ;
+  transform: scale(.19,.19) ;
+  opacity:19%
+
+}
+@keyframes clusters{
+  50%{transform:scale(1,1)}
+  50%{opacity:90%}
+
+
+}
+@keyframes clusters2{
+  50%{transform:scale(2.3,2.3)}
+  50%{opacity:60%}
+}
+
+
+
+.cambox{
+  animation: cambox;
+  position: absolute;
+  left: -85px;
+  top:0px;
+  animation-duration: 2.9s;
+  animation-iteration-count:infinite ;
+  transform: scale(.51,.51) ;
+  opacity:60%
+
+}
+@keyframes cambox{
+  50%{transform:scale(.37,.37)}
+
+}
+.camboxmon{
+  position: absolute;
+  opacity:60%;
+  animation: camboxmon;
+  left:14px;
+  top:74px;
+  animation-duration: 1.9s;
+  animation-iteration-count:infinite ;
+  transform: scale(.6,.6) translate(0px,00px);
+}
+@keyframes camboxmon{
+  50%{opacity: 60%}
+  50%{transform:scale(.73,.73)}
+
+}
+
+.sumsquarebox{
+  position: absolute;
+  opacity:100%;
+  animation: sumsquarebox;
+  left:-39px;
+  top:17px;
+  animation-duration: 4.9s;
+  animation-iteration-count:infinite ;
+  transform: scale(.54,.54) translate(0px,00px);
+}
+.clustererbox{
+  position: absolute;
+  opacity:100%;
+  animation: sumsquarebox;
+  left:-87px;
+  top:-36px;
+  animation-duration: 4.9s;
+  animation-iteration-count:infinite ;
+  transform: scale(.57,.57) translate(0px,00px);
+}
+.beatbox{
+  position: absolute;
+  opacity:100%;
+  animation: sumsquarebox;
+  left:-139px;
+  top:-49px;
+  animation-duration: 4.9s;
+  animation-iteration-count:infinite ;
+  transform: scale(.49,.49) translate(0px,00px);
+}
+.cambox{
+  position: absolute;
+  opacity:100%;
+  animation: sumsquarebox;
+  left:-76px;
+  top:-31px;
+  animation-duration: 4.9s;
+  animation-iteration-count:infinite ;
+  transform: scale(.54,.54) translate(0px,00px);
+}
+.melody2{
+  position: absolute;
+  opacity:100%;
+  animation: melody2;
+  left:-50px;
+  top:59px;
+  animation-duration: .9s;
+  animation-iteration-count:infinite ;
+  transform: scale(.4,.4) translate(0px,00px);
+}
+@keyframes sumsquarebox{
+  50%{opacity: 60%}
+}
+@keyframes melody2{
+  50%{transform: scale(.4,.5)}
+}
+.sumsquareglass{
+  position: absolute;
+  opacity:100%;
+  animation: sumsquareglass;
+  left:-17px;
+  top:27px;
+  animation-duration: 4.9s;
+  animation-iteration-count:infinite ;
+  transform: scale(.56,.56) translate(0px,00px);
+}
+.beatglass{
+  position: absolute;
+  opacity:100%;
+  animation: sumsquareglass;
+  left:-67px;
+  top:17px;
+  animation-duration: 4.9s;
+  animation-iteration-count:infinite ;
+  transform: scale(.56,.56) translate(0px,00px);
+}
+.camglass{
+  position: absolute;
+  opacity:100%;
+  animation: sumsquareglass;
+  left:-43px;
+  top:-9px;
+  animation-duration: 4.9s;
+  animation-iteration-count:infinite ;
+  transform: scale(.49,.45) translate(0px,00px);
+}
+.clusterglass{
+  position: absolute;
+  opacity:100%;
+  animation: sumsquareglass;
+  left:-39px;
+  top:-3px;
+  animation-duration: 4.9s;
+  animation-iteration-count:infinite ;
+  transform: scale(.59,.59) translate(0px,00px);
+}
+@keyframes sumsquareglass{
+}
+.sumsquareline{
+  position: absolute;
+  opacity:0%;
+  animation: sumsquareline;
+  left:21px;
+  top:19px;
+  transform-origin: bottom left;
+  animation-duration: 2.7s;
+  animation-iteration-count:infinite ;
+  transform: rotate(45deg) scale(.44,.44);
+}
+@keyframes sumsquareline{
+  25%{opacity: 36%}
+  50%{transform:rotate(-45deg) scale(.45,.45);}
+  75%{opacity: 36%}
+}
+.Camlight{
+  position: absolute;
+  opacity:00%;
+  animation: camlight;
+  left:59px;
+  top:9px;
+  animation-duration: 2.9s;
+  animation-iteration-count:infinite ;
+  transform: scale(.59,.59) translate(0px,00px);
+}
+@keyframes camlight{
+  50%{opacity: 60%}
+  50%{transform:scale(.63,.63)}
+}
+.slopey{
+  animation: slopey;
+  position: absolute;
+  left: 19px;
+  top:60px;
+  animation-duration: 4.9s;
+  animation-iteration-count:infinite ;
+  transform: scale(.6,.6) ;
+  opacity:0%
+
+}
+@keyframes slopey{
+  50%{  transform: scale(.6,.6) ;
+}
+  50%{opacity:100%}
+
+
+}
